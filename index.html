@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Cormorant+Garamond:ital,wght@1,400&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./img/aurel-favicon.png">
+    <title>AUREL</title>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>AUREL</h1>
+            <h6>WINDOW ATELIER</h6>
+        </div>
+        <div class="a-links">
+            <a href="#collection">Collection</a>
+            <a href="#projects">Projects</a>
+            <a href="#why">The atelier</a>
+            <a href="#contactForm">Our approach</a>
+            <button id="discuss">Discuss your project <p>↑</p></button>
+        </div>
+    </header>
+    <section class="section1">
+        <h5 class="text-h5"><img src="img/Gold rule.png" alt=""> A DIFFERENT PERSPECTIVE ON LIVING</h5>
+        <h1 class="text-ar">Architecture,</h1>
+        <h1 class="text-fr">framed by light.</h1>
+        <h5 class="text-bes">Bespoke windows for exceptional spaces. Designed to <br> dissolve boundaries. Crafted to belong.</h5>
+        <div class="flex">
+            <button id="explore">Explore the collection <p>↑</p></button>
+            <div class="text-mini">
+                <h5 class="text-the">THE MEDITERRANEAN RESIDENCE</h5>
+                <h5 class="text-pa">Panoramic glazing · Bronze finish</h5>
+            </div>    
+        </div>
+        <div class="chiziq"></div>
+         
+    </section>
+    <section class="windows" id="windows">
+  <div class="windows-wrap">
+
+    <header class="windows-top" id="collection">
+      <div>
+        <p class="small-label">01 | The Collection</p>
+        <h1 class="title">Six expressions.<br>One considered vision.</h1>
+      </div>
+      <p class="top-text">Every space has its own character. Discover six window systems, each tailored to the architecture, the material palette, and the way you want to live.</p>
+    </header>
+
+    <div class="cards">
+
+      <article class="card">
+        <div class="card-img">
+          <img class="img" src="img/Window system.png" alt="Aluminum Windows">
+          <span class="num">01</span>
+        </div>
+        <div class="card-body">
+          <p class="small-label">Structurally elegant</p>
+          <h2 class="card-title"><span class="name">Aluminum Windows</span><span class="arrow">↗</span></h2>
+          <p class="card-text">Sculpted profiles. Confident lines. A refined architectural language in every fabric.</p>
+          <p class="tags">Precision | Versatility</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-img">
+          <img class="img" src="img/Window system (1).png" alt="UPVC Windows">
+          <span class="num">02</span>
+        </div>
+        <div class="card-body">
+          <p class="small-label">Quietly considered</p>
+          <h2 class="card-title"><span class="name">UPVC Windows</span><span class="arrow">↗</span></h2>
+          <p class="card-text">Thoughtful comfort and effortless upkeep, with a clean, enduring silhouette.</p>
+          <p class="tags">Comfort | Reliability</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-img">
+          <img class="img" src="img/Window system (2).png" alt="Panoramic Windows">
+          <span class="num">03</span>
+        </div>
+        <div class="card-body">
+          <p class="small-label">The uninterrupted view</p>
+          <h2 class="card-title"><span class="name">Panoramic Windows</span><span class="arrow">↗</span></h2>
+          <p class="card-text">Expansive fixed glazing that makes the landscape part of the room.</p>
+          <p class="tags">Glass | Gravity</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-img">
+          <img class="img" src="img/Window system (3).png" alt="Sliding Windows">
+          <span class="num">04</span>
+        </div>
+        <div class="card-body">
+          <p class="small-label">Space in motion</p>
+          <h2 class="card-title"><span class="name">Sliding Windows</span><span class="arrow">↗</span></h2>
+          <p class="card-text">Fluid openings and precise movement, bringing interior and exterior together.</p>
+          <p class="tags">Movement | Connection</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-img">
+          <img class="img" src="img/Window system (4).png" alt="Wooden Windows">
+          <span class="num">05</span>
+        </div>
+        <div class="card-body">
+          <p class="small-label">Naturally expressive</p>
+          <h2 class="card-title"><span class="name">Wooden Windows</span><span class="arrow">↗</span></h2>
+          <p class="card-text">The warmth of timber, shaped with care. Tactile character that deepens with time.</p>
+          <p class="tags">Warmth | Character</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-img">
+          <img class="img" src="img/Window system (5).png" alt="Minimalist Windows">
+          <span class="num">06</span>
+        </div>
+        <div class="card-body">
+          <p class="small-label">Less frame, more world</p>
+          <h2 class="card-title"><span class="name">Minimalist Windows</span><span class="arrow">↗</span></h2>
+          <p class="card-text">Recessive detailing and barely-there sightlines. Architecture, distilled to its essence.</p>
+          <p class="tags">Restraint | Lightness</p>
+        </div>
+      </article>
+
+    </div>
+
+    <p class="bottom-text">Your vision is the starting point. Every detail follows.</p>
+  </div>
+
+  <div class="modal" id="modal">
+    <button class="modal-close" id="modalClose">✕</button>
+    <img class="modal-img" id="modalImg" src="" alt="">
+    <p class="modal-title" id="modalTitle"></p>
+  </div>
+</section>
+
+<section class="projects" id="projects">
+
+    <p class="projects-label">03 | Selected projects</p>
+    <h2 class="projects-title">Distinct places. Shared vision.</h2>
+    <p class="projects-text">
+        An architectural portfolio of possibilities. Different settings, individual expressions — each one an exploration of light, material, and place.
+    </p>
+
+    <div class="projects-grid">
+
+        <article class="projects-card projects-big">
+            <div class="projects-photo">
+                <img class="projects-img" src="img/Residence photograph.png" alt="Lake Como, Italy">
+            </div>
+
+            <div class="projects-info">
+                <p class="projects-place">Lake Como, Italy</p>
+                <h3 class="projects-name">A quieter kind of grandeur</h3>
+                <p class="projects-meta">Panoramic / Bronze aluminium</p>
+                <span class="projects-arrow">↗</span>
+            </div>
+        </article>
+
+        <article class="projects-card">
+            <div class="projects-photo">
+                <img class="projects-img" src="img/Residence photograph (1).png" alt="Comporta, Portugal">
+            </div>
+
+            <div class="projects-info">
+                <p class="projects-place">Comporta, Portugal</p>
+                <h3 class="projects-name">In conversation with the coast</h3>
+                <p class="projects-meta">Sliding / Anodised aluminium</p>
+                <span class="projects-arrow">↗</span>
+            </div>
+        </article>
+
+        <article class="projects-card">
+            <div class="projects-photo">
+                <img class="projects-img" src="img/Residence photograph (2).png" alt="Cotswolds, United Kingdom">
+            </div>
+
+            <div class="projects-info">
+                <p class="projects-place">Cotswolds, United Kingdom</p>
+                <h3 class="projects-name">Rooted in the landscape</h3>
+                <p class="projects-meta">Wooden / Natural oak</p>
+                <span class="projects-arrow">↗</span>
+            </div>
+        </article>
+
+    </div>
+
+    <div class="projects-bottom">
+        <p>Residential architecture / An international perspective</p>
+        <p>AUREL Journal — Volume 01</p>
+    </div>
+
+</section>
+
+<section class="why" id="why">
+
+  <p class="why-label">04 | Why choose Aurel</p>
+  <h2 class="why-title">Excellence is in the consideration.</h2>
+
+  <div class="why-grid">
+
+    <div class="why-item">
+      <p class="why-num">01</p>
+      <h3 class="why-name">Architecture first</h3>
+      <p class="why-text">We begin with the building, not a catalogue. Every opening is considered in relation to proportion, light, and the life within.</p>
+    </div>
+
+    <div class="why-item">
+      <p class="why-num">02</p>
+      <h3 class="why-name">Material honesty</h3>
+      <p class="why-text">Distinctive metals, characterful timber, and thoughtfully chosen finishes. Materials selected for how they look, feel, and belong.</p>
+    </div>
+
+    <div class="why-item">
+      <p class="why-num">03</p>
+      <h3 class="why-name">Details that matter</h3>
+      <p class="why-text">From the sightline to the handle, from the corner joint to the threshold. An exacting approach to the elements you see and those you don’t.</p>
+    </div>
+
+    <div class="why-item">
+      <p class="why-num">04</p>
+      <h3 class="why-name">A personal partnership</h3>
+      <p class="why-text">A dedicated dialogue from concept and specification to installation. Your architect, your ambitions, and our expertise, working as one.</p>
+    </div>
+
+  </div>
+
+</section>
+<section class="contact" id="contact">
+  <div class="contact-box">
+
+    <div class="contact-left">
+      <p class="contact-label">05 | Your next perspective</p>
+      <h2 class="contact-title">Exceptional spaces begin with a conversation.</h2>
+      <p class="contact-text">Tell us about your project, your ideas, and the view you have in mind. Our atelier will help you explore what’s possible.</p>
+      <p class="contact-small">Prefer a personal introduction?</p>
+      <a class="contact-mail" href="mailto:concierge@aurel.studio">concierge@aurel.studio</a>
+      <p class="contact-note">Private consultations by appointment. For homeowners, architects, and design professionals.</p>
+    </div>
+
+    <form class="contact-form" id="contactForm">
+
+      <div class="contact-row">
+        <div class="contact-field">
+          <label for="contactName">Your name *</label>
+          <input type="text" id="contactName" placeholder="Full name" required>
+        </div>
+        <div class="contact-field">
+          <label for="contactEmail">Email address *</label>
+          <input type="email" id="contactEmail" placeholder="you@example.com" required>
+        </div>
+      </div>
+
+      <div class="contact-row">
+        <div class="contact-field">
+          <label for="contactCity">Project location</label>
+          <input type="text" id="contactCity" placeholder="City, country">
+        </div>
+        <div class="contact-field">
+          <label for="contactRole">I am a...</label>
+          <select id="contactRole">
+            <option value="">Select your role</option>
+            <option>Homeowner</option>
+            <option>Architect</option>
+            <option>Interior designer</option>
+            <option>Developer</option>
+            <option>Other</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="contact-field">
+        <label for="contactSystem">Window collection</label>
+        <select id="contactSystem">
+          <option value="">Select a system or help me choose</option>
+          <option>Aluminum Windows</option>
+          <option>UPVC Windows</option>
+          <option>Panoramic Windows</option>
+          <option>Sliding Windows</option>
+          <option>Wooden Windows</option>
+          <option>Minimalist Windows</option>
+          <option>Help me choose</option>
+        </select>
+      </div>
+
+      <div class="contact-field">
+        <label for="contactMessage">Tell us about your project</label>
+        <textarea id="contactMessage" placeholder="Your vision, project stage, and any details you’d like to share..."></textarea>
+      </div>
+
+      <label class="contact-check">
+        <input type="checkbox" id="contactAgree" required>
+        <span>I agree to the privacy policy and consent to AUREL contacting me about my enquiry.</span>
+      </label>
+
+      <button class="contact-btn" type="submit" id="contactBtn">Send your enquiry <span>↗</span></button>
+
+    </form>
+
+  </div>
+</section>
+
+<section class="footer">
+    <div class="footer-top">
+        <div class="logo">
+            <h2>AUREL</h2>
+            <span>WINDOW ATELIER</span>
+        </div>
+        <h2 class="quote">Open to a different perspective.</h2>
+    </div>
+
+    <div class="line"></div>
+
+    <div class="footer-content">
+        <div class="footer-box">
+            <h4>EXPLORE</h4>
+            <a href="#">Collection</a>
+            <a href="#">The atelier</a>
+            <a href="#">Projects</a>
+            <a href="#">Our approach</a>
+        </div>
+
+        <div class="footer-box">
+            <h4>CONNECT</h4>
+            <a href="#">Make an enquiry</a>
+            <a href="#">Instagram ↗</a>
+            <a href="#">Pinterest ↗</a>
+            <a href="#">LinkedIn ↗</a>
+        </div>
+
+        <div class="footer-info">
+            <h4>THE ART OF THE OPENING</h4>
+            <p>Bespoke window systems. An international<br>
+            outlook. An individual point of view.</p>
+        </div>
+    </div>
+
+    <div class="line"></div>
+
+    <div class="footer-bottom">
+        <p>© 2026 AUREL Window Atelier. All rights reserved.</p>
+
+        <div class="bottom-links">
+            <a href="#">Privacy policy</a>
+            <a href="#">Terms of use</a>
+        </div>
+
+        <span>BEYOND THE FRAME.</span>
+    </div>
+</section>
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
